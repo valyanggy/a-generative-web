@@ -10,7 +10,7 @@ body {
 
 #myZone {
     position: fixed;
-    top: 10%;
+    top: 0;
     z-index: -10;
     max-width: 100%;
 }
@@ -70,7 +70,7 @@ summary {
 }
 
 a {
-    color: aqua;
+    color: rgb(255, 208, 0);
     text-decoration: none;
 }
 
