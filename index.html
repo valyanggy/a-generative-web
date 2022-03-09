@@ -24,7 +24,7 @@
 
     <!-- interaction exercise -->
     <div id='myZone'></div>
-
+    <div id="myDIV"></div>
 
     <!-- <div id="clock"></div> -->
     <!-- table of content -->
@@ -76,6 +76,17 @@
                 <td>03/02/2022</td>
                 <td>
                     <a href="#week5">clock.js</a></td>
+                <td>
+                    <!-- <a href="https://whitney.org/exhibitions/programmed">"Programmed: Rules, Codes, and Choreographies in Art, 1965–2018
+                        Sept 28, 2018–Apr 14, 2019</a> -->
+                </td>
+            </tr>
+            <tr>
+                <td>03/09/2022</td>
+                <td>
+                    <a id="button"><button onclick="myFunction()">blob.js</button></a>
+                    <!-- <div id="myDIV"></div> -->
+                </td>
                 <td>
                     <!-- <a href="https://whitney.org/exhibitions/programmed">"Programmed: Rules, Codes, and Choreographies in Art, 1965–2018
                         Sept 28, 2018–Apr 14, 2019</a> -->
@@ -242,6 +253,18 @@
     </footer>
 
 
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            // x.innerHTML = "¡Aquí estoy!"
+            if (x.innerHTML === "¡Aquí estoy!") {
+                x.innerHTML = " ";
+            } else {
+                x.innerHTML = "¡Aquí estoy!";
+            }
+        }
+    </script>
 
 
 
