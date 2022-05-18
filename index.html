@@ -3,14 +3,20 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>a-generative-journal</title>
+    <title>script</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="this is a blog that shares val yang's thoughts about web development and design" />
+    <meta name="description"
+        content="this is a blog that shares val yang's thoughts about web development and design" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;900&display=swap" rel="stylesheet">
     <script src="ripple.js" type="text/javascript"></script>
+    <!-- <script src="tree.js" type="text/javascript"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js" type="text/javascript"></script>
+    <script src="CCapture.all.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.js"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
@@ -30,9 +36,10 @@
 
     <!-- interaction exercise -->
     <div id='myZone'></div>
-    <!-- <div id="myDIV"></div> -->
+    <div id="myDIV"></div>
 
-    <!-- <div id="clock"></div> -->
+    <div id="clock"></div>
+
     <!-- table of content -->
     <details>
         <summary>content</summary>
@@ -55,24 +62,29 @@
                 <td>02/09/2022</td>
                 <td>
                     make a
-                    <a href="#week2">html page</a> as a home that stores all the future posts <br>reading reflection</td>
+                    <a href="#week2">html page</a> as a home that stores all the future posts <br>reading reflection
+                </td>
                 <td>
-                    <a href="http://blog.ocad.ca/wordpress/mgewurtz/2011/06/summary-essay-constructing-the-spectacle-of-culture-in-museums/">"summary-essay-constructing-the-spectacle-of-culture-in-museums</a>
+                    <a
+                        href="http://blog.ocad.ca/wordpress/mgewurtz/2011/06/summary-essay-constructing-the-spectacle-of-culture-in-museums/">"summary-essay-constructing-the-spectacle-of-culture-in-museums</a>
                 </td>
             </tr>
             <tr>
                 <td>02/16/2022</td>
                 <td>
-                    <a href="#week3">update</a> <br>reference and reading reflection on jodi' s infrastructure</td>
+                    <a href="#week3">update</a> <br>reference and reading reflection on jodi' s infrastructure
+                </td>
                 <td>
-                    <a href="https://whitney.org/exhibitions/programmed">"Programmed: Rules, Codes, and Choreographies in Art, 1965–2018
+                    <a href="https://whitney.org/exhibitions/programmed">"Programmed: Rules, Codes, and Choreographies
+                        in Art, 1965–2018
                         Sept 28, 2018–Apr 14, 2019</a>
                 </td>
             </tr>
             <tr>
                 <td>02/23/2022</td>
                 <td>
-                    <a href="#week4">update</a> <br>drawing instructions</td>
+                    <a href="#week4">update</a> <br>drawing instructions
+                </td>
                 <td>
                     <!-- <a href="https://whitney.org/exhibitions/programmed">"Programmed: Rules, Codes, and Choreographies in Art, 1965–2018
                         Sept 28, 2018–Apr 14, 2019</a> -->
@@ -81,7 +93,8 @@
             <tr>
                 <td>03/02/2022</td>
                 <td>
-                    <a href="#week5">clock.js</a></td>
+                    <a href="#week5">clock.js</a>
+                </td>
                 <td>
                     <!-- <a href="https://whitney.org/exhibitions/programmed">"Programmed: Rules, Codes, and Choreographies in Art, 1965–2018
                         Sept 28, 2018–Apr 14, 2019</a> -->
@@ -108,9 +121,12 @@
 
             <div id="week1" class="container">
                 <br><br><br><br><br><br> 02.02.2022
-                <img style=" display: block;margin-left: auto;margin-right: auto;width: 50%;" width=300px src="mudra.jpg" alt="a picture of many mudra positions">
+                <img style=" display: block;margin-left: auto;margin-right: auto;width: 50%;" width=300px
+                    src="mudra.jpg" alt="a picture of many mudra positions">
                 <h2 style="font-family: 'Inconsolata', monospace; font-weight: 300; font-size: 4vw; padding: 20px">
-                    A <span style="font-weight: bold">mudra</span>(/mu'dra:/); Sanskrit: मुद्रा, IAST: mudrā, "seal", "mark", or "gesture"; Tibetan: ཕྱག་རྒྱ་, THL: chakgya,) is a symbolic or ritual gesture or pose in Hinduism, Jainism and Buddhism.[1]
+                    A <span style="font-weight: bold">mudra</span>(/mu'dra:/); Sanskrit: मुद्रा, IAST: mudrā, "seal",
+                    "mark", or "gesture"; Tibetan: ཕྱག་རྒྱ་, THL: chakgya,) is a symbolic or ritual gesture or pose in
+                    Hinduism, Jainism and Buddhism.[1]
                     While some mudras involve the entire body, most are performed with the hands and fingers.</h2>
                 <h1 style="font-family: 'Inconsolata', monospace; font-weight: 300;padding: 20px">
 
@@ -123,19 +139,33 @@
                 <strong>reflection here:</strong>
                 <h2>on Surf Clubs</h2>
                 <ul>
-                    <li>"information should be free" <br>it should be made accessible and at least shouldn't fry your laptop</li>
-                    <li>"freedom for users" <br>it's kinda interesting that this article focuses on the browsing journey that people used to enjoy, which allows the extent of autonomy that is inviting and limitless. Example used here was NFTs, but apparently
+                    <li>"information should be free" <br>it should be made accessible and at least shouldn't fry your
+                        laptop</li>
+                    <li>"freedom for users" <br>it's kinda interesting that this article focuses on the browsing journey
+                        that people used to enjoy, which allows the extent of autonomy that is inviting and limitless.
+                        Example used here was NFTs, but apparently
                         people are creating web-based NFT projects now</li>
-                    <li>community <br> could be what the functional sites wouldn't prioritise. the del.icio.us site succeeded to do with the tagging interaction, user engagement was fostered by 1.single function 2.archival feature. also theres just no ads
+                    <li>community <br> could be what the functional sites wouldn't prioritise. the del.icio.us site
+                        succeeded to do with the tagging interaction, user engagement was fostered by 1.single function
+                        2.archival feature. also theres just no ads
                         or algorithm(filter bubbles) that pushes you away
                     </li>
-                    <li>"why web needs to be sheltered in web" <br>this could be tangent but another reading from Fred Wilson about how space used to display artworks have significant affects on viewers perspective. he experimented by framing three types
-                        of exhibition space in "Room with a view: the struggle between cultural context and context of art": the white cube, the small ethonographic museum, the turn-of-the-century salon space. all pieces presented withou lable. found
-                        out surprisingly that not only the viewers were confused but the curators and even the artists were some extent intervened in terms of distinguishing and creating. web should stay perculiar to the format it has always been embedded.
+                    <li>"why web needs to be sheltered in web" <br>this could be tangent but another reading from Fred
+                        Wilson about how space used to display artworks have significant affects on viewers perspective.
+                        he experimented by framing three types
+                        of exhibition space in "Room with a view: the struggle between cultural context and context of
+                        art": the white cube, the small ethonographic museum, the turn-of-the-century salon space. all
+                        pieces presented withou lable. found
+                        out surprisingly that not only the viewers were confused but the curators and even the artists
+                        were some extent intervened in terms of distinguishing and creating. web should stay perculiar
+                        to the format it has always been embedded.
                     </li>
-                    <li>"I understood this as the difference between the thing of beauty that was found online while surfing - an image or ab it of information - and the <strong>journey</strong> towards a thing. In myeyes, it enabled thinking about an
+                    <li>"I understood this as the difference between the thing of beauty that was found online while
+                        surfing - an image or ab it of information - and the <strong>journey</strong> towards a thing.
+                        In myeyes, it enabled thinking about an
                         <strong>entire
-                        conversation as an artwork</strong>, instead of a single argument, piece or comment.</li>
+                            conversation as an artwork</strong>, instead of a single argument, piece or comment.
+                    </li>
                 </ul>
 
             </div>
@@ -145,25 +175,45 @@
                 <strong>reflection on:</strong>
                 <h2>Jodi's Infrastructure</h2>
                 <ul>
-                    <li>like last week's reading the essence of that web shouldn't be displayed in a gallery space for that would bypass the peculiar digitality of web</li>
-                    <li>-some programmers or engineers think of the machine as a tool to be used in pursuit of some larger design strategy. digitailty is context or condition- it makes sense cause the art that work 'within' the digitality can truly take off
-                        from the dependence on the context. and i really like how art of code is portrayed here: art: but code derives its beauty, its very identity, from an analysis of function and its accurate formalization in logical and mathematical
+                    <li>like last week's reading the essence of that web shouldn't be displayed in a gallery space for
+                        that would bypass the peculiar digitality of web</li>
+                    <li>-some programmers or engineers think of the machine as a tool to be used in pursuit of some
+                        larger design strategy. digitailty is context or condition- it makes sense cause the art that
+                        work 'within' the digitality can truly take off
+                        from the dependence on the context. and i really like how art of code is portrayed here: art:
+                        but code derives its beauty, its very identity, from an analysis of function and its accurate
+                        formalization in logical and mathematical
                         structures
                     </li>
-                    <li>infrastructural modernism: they are technologists who insist that the beauty of code comes from function and elegance but from a different set of virtues - dysfunction and inelegance to be sure, but also confusion and excitement, violence
+                    <li>infrastructural modernism: they are technologists who insist that the beauty of code comes from
+                        function and elegance but from a different set of virtues - dysfunction and inelegance to be
+                        sure, but also confusion and excitement, violence
                         and energy: the computer as medium: <br> this reminds me of this reading defining
-                        <a href="https://drive.google.com/file/d/13Pl5_DeU1vw1VysSUvqdq3RrSdb2Rod_/view?usp=sharing">new media</a> that basically, numericial representation and automation are principling, it is truly unique and self-driving devices that
-                        reside in every corner in the internet world and its massive capacity gives you the freedom to: make rules and let go of them. jodi's works have to live on the this medium.
+                        <a href="https://drive.google.com/file/d/13Pl5_DeU1vw1VysSUvqdq3RrSdb2Rod_/view?usp=sharing">new
+                            media</a> that basically, numericial representation and automation are principling, it is
+                        truly unique and self-driving devices that
+                        reside in every corner in the internet world and its massive capacity gives you the freedom to:
+                        make rules and let go of them. jodi's works have to live on the this medium.
                     </li>
                 </ul>
 
                 <strong>reference on "instruction-based art"</strong> <br>
                 <details>
-                    <summary> <a href="https://whitney.org/exhibitions/programmed?section=3&subsection=3#exhibition-artworks" id="art">W. Bradford Paley, CodeProfiles, 2002</a></summary>
-                    <p>CodeProfiles looks at the computer program as text and visually comments on how code is read by people, written by programmers, and executed by computers. Reflecting on its own construction, the work consists of the code that makes
-                        the code visible on the screen. Three points in code space are indicated: the amber line follows the fixation point, tracing how people might read the text, line by line; the white line follows the insertion point and flows like
-                        the programmer’s thoughts, calmly in one place then jumping around to make other parts of the code perform; and the green line moves along the execution point of the program, creating wide swaths where the code was executed thousands
-                        of times and appearing as a thin thread where the processor rarely visited. W. Bradford Paley thereby foregrounds the conceptual nature of all digital art, which is always driven by a language formulating instructions.</p>
+                    <summary> <a
+                            href="https://whitney.org/exhibitions/programmed?section=3&subsection=3#exhibition-artworks"
+                            id="art">W. Bradford Paley, CodeProfiles, 2002</a></summary>
+                    <p>CodeProfiles looks at the computer program as text and visually comments on how code is read by
+                        people, written by programmers, and executed by computers. Reflecting on its own construction,
+                        the work consists of the code that makes
+                        the code visible on the screen. Three points in code space are indicated: the amber line follows
+                        the fixation point, tracing how people might read the text, line by line; the white line follows
+                        the insertion point and flows like
+                        the programmer’s thoughts, calmly in one place then jumping around to make other parts of the
+                        code perform; and the green line moves along the execution point of the program, creating wide
+                        swaths where the code was executed thousands
+                        of times and appearing as a thin thread where the processor rarely visited. W. Bradford Paley
+                        thereby foregrounds the conceptual nature of all digital art, which is always driven by a
+                        language formulating instructions.</p>
                     <img src="https://i.ytimg.com/vi/Hs8rDvC3GZg/maxresdefault.jpg" alt="codeprofilesimg" width="90%">
 
                 </details>
@@ -185,7 +235,8 @@
                     </ol>
                     <details>
                         <summary>example output</summary>
-                        <h2><img src="img/drawing-01.png" alt="example-drawing1-1" width="30%"><img src="img/drawing-02.png" alt="example-drawing1-2" width="30%"></h2><br>
+                        <h2><img src="img/drawing-01.png" alt="example-drawing1-1" width="30%"><img
+                                src="img/drawing-02.png" alt="example-drawing1-2" width="30%"></h2><br>
                         <p>my friend's creation:</p> <img src="img/drawing-03.png" alt="example-drawing1-3" width="50%">
                     </details>
 
@@ -200,8 +251,10 @@
                     </ol>
                     <details>
                         <summary>example output</summary>
-                        <h2><img src="img/drawing-04.png" alt="example-drawing2-1" width="30%"><img src="img/drawing-05.png" alt="example-drawing2-2" width="30%"></h2><br>
-                        <p>my friend's creation:</p> <img src="img/drawing-06.png" alt="example-drawing2-3" width="50%"></details>
+                        <h2><img src="img/drawing-04.png" alt="example-drawing2-1" width="30%"><img
+                                src="img/drawing-05.png" alt="example-drawing2-2" width="30%"></h2><br>
+                        <p>my friend's creation:</p> <img src="img/drawing-06.png" alt="example-drawing2-3" width="50%">
+                    </details>
 
                 </details>
                 <details>
@@ -216,7 +269,8 @@
                     </ol>
                     <details>
                         <summary>example output</summary>
-                        <h2><img src="img/drawing-07.png" alt="example-drawing3-1" width="30%"><img src="img/drawing-08.png" alt="example-drawing3-2" width="30%"></h2><br>
+                        <h2><img src="img/drawing-07.png" alt="example-drawing3-1" width="30%"><img
+                                src="img/drawing-08.png" alt="example-drawing3-2" width="30%"></h2><br>
                         <p>my friend's creation:</p> <img src="img/drawing-09.png" alt="example-drawing3-3" width="50%">
                     </details>
 
@@ -250,11 +304,111 @@
 
 
             </div>
+            <div id="week5" class="container">
+                03.02.2022
+                <!-- <p>updated on structure(mobile, position, myZone) </p> <br><br> -->
+                <strong>reflection on:</strong>
+                <h2>Grapefruit_yoko_ono</h2>
+                <p>to tour the apartment in Midtown <br>
+
+                    to decide to watch a movie <br>
+
+                    to rush into the movie & assume plenty of time before the ads end <br>
+
+                    to walk out and decide to watch another movie that the only way to wedge the time perfectly is to
+                    walk to another AMC nearby <br>
+
+                    \ <br>
+
+                    to encounter a psychic <br> <br>
+
+                    If a psychic outside of theology or spirituality is not legit, then the craftmanship of seeing
+                    people through is art or technology.</p>
+            </div>
+            <div id="week6" class="container">
+                03.09.2022
+                <!-- <p>updated on structure(mobile, position, myZone) </p> <br><br> -->
+                <strong>reflection on:</strong>
+                <h2>Concept design games book 2: playing</h2>
+                <p>Playfulness:
+
+                    I think Control, Interaction, Transformation are the main factors of entertainment of life, sources
+                    of joy and contentment. Games in that sense do sound like commercialised fantasy and I don’t see why
+                    they are bad for your health.
+
+                    <br><br>Engineering:
+
+                    In details, the storytelling aspect of games is critically heightened.
+
+                    "Interactivity is almost the opposite of narrative; narrative
+                    flows under the direction of the author, while interactivity depends
+                    on the player for motive power" --Ernest Adams
+                    [(1)](http://web.mit.edu/~21fms/People/henry3/games&narrative.html?utm_campaign=Narrative%20Design&utm_medium=email&utm_source=Revue%20newsletter#2)
+
+                    The idea of nonlinear narrative and “interactive cinema” is fascinating, the prime framework of a
+                    game setting should be included in the iteration of game design and that provides inspiration for
+                    all disciplinary of design. I take this point from Henry Jenkins as main inspiration:
+
+                    Many games *do* have narrative aspirations. Minimally, they want to tap the emotional residue of
+                    previous narrative experiences. Often, they depend on our familiarity with the roles and goals of
+                    genre entertainment to orientate us to the action, and in many cases, game designers want to create
+                    a series of narrative experiences for the player. Given those narrative aspirations, it seems
+                    reasonable to suggest that some understanding of how games relate to narrative is necessary before
+                    we understand the aesthetics of game design or the nature of contemporary game culture.
+                </p>
+            </div>
+            <div id="week7" class="container">
+                03.23.2022
+                <!-- <p>updated on structure(mobile, position, myZone) </p> <br><br> -->
+                <strong>reflection on:</strong>
+                <h2>Franke Computer graphics-Computer Art</h2>
+                <p> <a href="http://graphicmag.kr/index.php?/issues/introduction-to-computation/ ">GRAPHIC mag</a>
+
+                    How might computational approaches inform contemporary graphic design practices?
+
+                    The use of mathematical calculations, or “computation,” is most commonly
+                    associated with using algorithms in programming, and may at first seem
+                    distant, if not daunting, for one who sets out to consider the
+                    implications of using computation in design. What is certainly paramount
+                    to the field of computer science, computation and computational
+                    approaches are far from receiving neither widespread appreciation nor
+                    comprehensive understanding when brought in tandem with graphic design. <br><br>
+
+                    <br>P95 Alienated Science:
+
+                    Everyday objects that ‘bear no apparent relation to art’ as aesthetic forms. Scientific pictures
+                    that are used to obtain data or information is considered of utility, purpose and further boundary
+                    for creating art. The solution to blur that boundary is to approach it with sheer pleasure in
+                    graphic experiment: discarding professional ends, they begin to manipulate structures in conformity
+                    with aesthetic notions.
+                </p>
+            </div>
+            <div id="week8" class="container">
+                03.30.2022
+                <!-- <p>updated on structure(mobile, position, myZone) </p> <br><br> -->
+                <strong>reflection on:</strong>
+                <h2>form+code-raes</h2>
+                <p>
+                    Visual Arts: as much as convention’s definition or emphasis on the visual part thats perceived by
+                    the eyes, I guess we often overlook the crafting part thats created and done with hands. Writing and
+                    thinking in the ways of creating codes is differed from the literal language we are used to,
+                    consider the capacity of softwares and computers that allows us to process a tremendous amount of
+                    information, it encourages a new way of thinking.
+                    <br><br>
+                    Procedural literacy(p17): examplified the sense of representation, writing rules that generate
+                    representation that challenges the authority of representation⇒mind-changing. This example of
+                    mind-blowing moment kinda reminds me of one time I encountered a design principle in computer
+                    program: SoC(Separation of Concerns) the idea of a modular program that does sectioning and handling
+                    layered information. There is a prioritisation that deals with whats most affecting the outcomes and
+                    the flow of work is just not what I am accustomed to with half of my brain not fully developed.
+
+                </p>
+            </div>
         </div>
 
     </details>
 
-    <footer>is my years of nihlism finally getting back at me? <br>
+    <footer style="display:none">is my years of nihlism finally getting back at me? <br>
         <p>author: val yang <a href="https://github.com/valyanggy"> github</a></p>
     </footer>
 
